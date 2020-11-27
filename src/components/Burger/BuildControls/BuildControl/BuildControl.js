@@ -1,5 +1,5 @@
 import React from 'react';
-import '../BuildControl.css';
+import '../../BuildControls/BuildControl/BuildControl.css';
 
 const buildControl = (props) => (
     <div className='BuildControl'>
