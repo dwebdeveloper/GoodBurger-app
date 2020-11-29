@@ -1,10 +1,11 @@
 import React from 'react';
 import Frag from '../../hoc/Frag';
 import './Layout.css';
+import Toolbar from '../Navigation/Toolbar/Toolbar';
 
 const layout = (props) => (
     <Frag>
-        <div>ToolBar, SideDrawer, Backdrop</div>
+        <Toolbar />
         <main className='Content'>
             {props.children}
         </main>
