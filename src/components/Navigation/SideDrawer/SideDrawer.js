@@ -13,7 +13,6 @@ const sideDrawer = (props) => {
 
 
 
-
     return (
         <Frag>
             <Backdrop show={props.open} clicked={props.close} />
