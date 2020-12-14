@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Frag from '../../hoc/Frag';
+//import Frag from '../Frag';
 import './Layout.css';
-import Toolbar from '../Navigation/Toolbar/Toolbar';
-import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
+import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
+import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 
 class Layout extends Component {
     state = {
@@ -22,7 +22,7 @@ class Layout extends Component {
 
     render() {
         return (
-            <Frag>
+            <>
                 <Toolbar clicked={this.drawerMenuClicked}>
                     this.props.children
                 </Toolbar>
@@ -30,7 +30,7 @@ class Layout extends Component {
                 <main className='Content'>
                     {this.props.children}
                 </main>
-            </Frag>
+            </>
 
         );
     }

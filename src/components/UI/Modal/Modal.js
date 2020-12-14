@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../Modal/Modal.css';
-import Frag from '../../../hoc/Frag';
+//import Frag from '../../../hoc/Frag';
 import Backdrop from '../Backdrop/Backdrop';
 
 class Modal extends Component {
-
+    //Can be a functional component
     shouldComponentUpdate(nextProps, nextState) {
         return nextProps.show !== this.props.show;
     }
@@ -15,7 +15,7 @@ class Modal extends Component {
     render() {
 
         return (
-            <Frag>
+            <>
                 <Backdrop show={this.props.show} clicked={this.props.modalClosed} />
                 <div
                     className='Modal'
@@ -26,7 +26,7 @@ class Modal extends Component {
 
                     {this.props.children}
                 </div>
-            </Frag>
+            </>
         )
     }
 }

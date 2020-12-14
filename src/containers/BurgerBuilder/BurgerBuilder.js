@@ -1,5 +1,5 @@
 import React, { Component, useReducer } from 'react';
-import Frag from '../../hoc/Frag';
+//import Frag from '../../hoc/Frag';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
@@ -95,7 +95,7 @@ class BurgerBuilder extends Component {
             disabledInfo[key] = disabledInfo[key] <= 0
         }
         return (
-            <Frag>
+            <>
                 <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
                     <OrderSummary
                         purchaseCancel={this.purchaseCancelHandler}
@@ -116,7 +116,7 @@ class BurgerBuilder extends Component {
                     price={this.state.totalPrice}
                     ordered={this.purchaseHandler}
                 />
-            </Frag>
+            </>
         );
     }
 }
