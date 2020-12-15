@@ -4,7 +4,7 @@ import '../Logo/Logo.css';
 
 const logo = (props) => (
     <div className='Logo' style={{ height: props.height, marginBottom: props.marginBottom }}>
-        <img src={burgerLogo} alt='Unique Burger' />
+        <img src={burgerLogo} alt='Good Burger' />
     </div>
 );
 
