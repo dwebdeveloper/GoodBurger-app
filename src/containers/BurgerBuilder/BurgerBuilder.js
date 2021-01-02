@@ -1,5 +1,4 @@
 import React, { Component, useReducer } from 'react';
-//import Frag from '../../hoc/Frag';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
