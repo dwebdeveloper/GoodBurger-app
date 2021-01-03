@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Frag from '../../../hoc/Frag';
 import Button from '../../UI/Button/Button';
 
 class OrderSummary extends Component {
@@ -14,7 +13,7 @@ class OrderSummary extends Component {
                     </li>)
             })
         return (
-            <Frag>
+            <>
                 <h3>Your Order</h3>
                 <p>A delcious burger with the following ingredients</p>
                 <ul>
@@ -24,7 +23,7 @@ class OrderSummary extends Component {
                 <p>Continue to Checkout?</p>
                 <Button btnType='Danger' clicked={this.props.purchaseCancel}>CANCEL</Button>
                 <Button btnType='Success' clicked={this.props.purchaseContinue}>CONTINUE</Button>
-            </Frag>
+            </>
         )
     }
 }
